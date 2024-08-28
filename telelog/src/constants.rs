@@ -1,0 +1,1 @@
+pub const BASEURL: &str = "https://api.telegram.org/bot";

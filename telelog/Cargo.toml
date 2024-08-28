@@ -1,0 +1,17 @@
+[package]
+name = "telelog"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+clap = { version = "4.5.16", features = ["derive"] }
+hostname = "0.4.0"
+reqwest = { version = "0.12.7", default-features = false, features = [
+    "rustls-tls",
+    "blocking",
+    "json",
+    "multipart",
+] }
+serde_json = "1.0.127"
+thiserror = "1.0.63"
